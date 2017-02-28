@@ -7,7 +7,7 @@
             <string value="jspex"/>
         </object>
 
-        <object class="org.apache.commons.pool.impl.GenericObjecctPool">
+        <object class="org.apache.commons.pool.impl.GenericObjectPool">
             <object class="org.apache.commons.pool.PoolableObjectFactory" null="true" />
         </object>
 
