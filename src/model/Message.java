@@ -1,8 +1,5 @@
 package model;
 
-/**
- * Created by SSENG on 2017-02-26.
- */
 public class Message {
     private int id;
     private String guestName;

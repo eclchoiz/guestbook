@@ -12,9 +12,6 @@ import java.sql.SQLException;
 import java.util.Collections;
 import java.util.List;
 
-/**
- * Created by choiz on 2017-02-28.
- */
 public class GetMessageListService {
     private static GetMessageListService instance = new GetMessageListService();
 
@@ -33,7 +30,9 @@ public class GetMessageListService {
         int currentPageNumber = pageNumber;
         try {
             conn = ConnectionProvider.getConnection();
+            System.out.print("conn"+conn.toString());
             MessageDao messageDao = MessageDaoProvider.getInstance().getMessageDao();
+            System.out.print("messageDao"+messageDao.toString());
 
             int messageTotalCount = messageDao.selectCount(conn);
 

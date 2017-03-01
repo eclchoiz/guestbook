@@ -5,9 +5,6 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import java.util.StringTokenizer;
 
-/**
- * Created by SSENG on 2017-02-26.
- */
 public class DBCPInit extends HttpServlet {
 
     public void init(ServletConfig config) throws ServletException {
@@ -18,10 +15,9 @@ public class DBCPInit extends HttpServlet {
                 String jdbcDriver = st.nextToken();
                 Class.forName(jdbcDriver);
             }
-
             Class.forName("org.apache.commons.dbcp.PoolingDriver");
         } catch (Exception e) {
-            throw new ServletException((e));
+            throw new ServletException(e);
         }
     }
 }

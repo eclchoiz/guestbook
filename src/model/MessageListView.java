@@ -2,9 +2,6 @@ package model;
 
 import java.util.List;
 
-/**
- * Created by choiz on 2017-02-28.
- */
 public class MessageListView {
     private int messageTotalCount;
     private int currentPageNumber;

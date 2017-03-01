@@ -9,9 +9,6 @@ import model.Message;
 import java.sql.Connection;
 import java.sql.SQLException;
 
-/**
- * Created by SSENG on 2017-03-01.
- */
 public class WriteMessageService {
     private static WriteMessageService instance = new WriteMessageService();
 

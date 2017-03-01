@@ -6,9 +6,6 @@ import model.Message;
 import java.sql.*;
 import java.util.List;
 
-/**
- * Created by SSENG on 2017-02-26.
- */
 public abstract class MessageDao {
     public abstract int insert(Connection conn, Message message) throws SQLException;
 
@@ -45,7 +42,7 @@ public abstract class MessageDao {
         ResultSet rs = null;
         try {
             stmt = conn.createStatement();
-            rs = stmt.executeQuery("select count(*) from guestbooc_message");
+            rs = stmt.executeQuery("select count(*) from guestbook_message");
             rs.next();
             return rs.getInt(1);
         } finally {

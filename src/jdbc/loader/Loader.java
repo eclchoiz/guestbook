@@ -5,9 +5,6 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import java.util.StringTokenizer;
 
-/**
- * Created by SSENG on 2017-02-26.
- */
 public class Loader extends HttpServlet {
     public void init(ServletConfig config) throws ServletException {
         try {

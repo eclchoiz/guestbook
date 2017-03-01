@@ -6,8 +6,8 @@
     String password = request.getParameter("password");
     boolean invalidPassword = false;
     try {
-        DeleteMessageService deletService = DeleteMessageService.getInstance();
-        deletService.deleteMessage(messageId, password);
+        DeleteMessageService deleteService = DeleteMessageService.getInstance();
+        deleteService.deleteMessage(messageId, password);
     } catch (InvalidMessagePasswordException e) {
         invalidPassword = true;
     }

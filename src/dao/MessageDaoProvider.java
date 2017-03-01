@@ -2,9 +2,6 @@ package dao;
 
 import dao.mysql.MySQLMessageDao;
 
-/**
- * Created by SSENG on 2017-02-26.
- */
 public class MessageDaoProvider {
     private static MessageDaoProvider instance = new MessageDaoProvider();
 
